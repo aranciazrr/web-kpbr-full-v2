@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tahfidzul Qur'an, Pondok Pesantren Kyai Parak Bambu Runcing</title>
+  <meta name="description" content="Program Tahfidzul Qur'an Pondok Pesantren Kyai Parak Bambu Runcing: takhassus Al-Qur'an selepas Subuh dan Maghrib, sima'an setiap Minggu Pon, serta pembina santri tahfidz." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body id="atas" class="font-sans antialiased selection:bg-kuningan-500 selection:text-kiswah-950">
+  <a href="#konten" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-md focus:bg-kiswah-900 focus:text-turats-50">Langsung ke isi</a>
+  <!-- =====================================================================
+       TOP ORNAMENTAL BAR (MAKLUMAT & KALIGRAFI)
+  ====================================================================== -->
+  <div class="bg-kiswah-950 text-turats-200 border-b border-kuningan-500/40 text-xs py-2 px-4 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-[12.5px] text-turats-100">
+        <i class="fa-solid fa-location-dot text-kuningan-400" aria-hidden="true"></i>
+        <span>Jl. Coyudan No. 3, Parakan, Temanggung</span>
+      </div>
+      <div class="hidden md:block">
+        <span lang="ar" dir="rtl" class="font-arabic text-base text-kuningan-300">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+      </div>
+      <div class="flex items-center gap-4 text-[12.5px]">
+        <span class="text-turats-200">NSPP 510033230019</span>
+        <span class="hidden sm:inline text-turats-300/50" aria-hidden="true">|</span>
+        <a href="pendaftaran.html" class="hidden sm:inline-flex items-center py-1 text-kuningan-300 underline-offset-4 hover:underline hover:text-white transition">
+          Info pendaftaran
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       2. HEADER: FLOATING GLASSMORPHISM NAVBAR DENGAN AKSEN EMAS KERATON
+  ====================================================================== -->
+  <header id="navbar" class="sticky top-0 z-50 bg-[#fbf8f1] border-b border-kuningan-500/50">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Sisi Kiri: Monogram "KP" & Tipografi -->
+      <a href="index.html" class="flex items-center gap-3.5 group" aria-label="Pondok Pesantren Kyai Parak Bambu Runcing, ke beranda">
+        <div class="relative w-12 h-12 rounded-full bg-kiswah-900 border-2 border-kuningan-500 flex items-center justify-center">
+          <div class="absolute inset-1 rounded-full border border-kuningan-400/50 border-dashed"></div>
+          <span class="font-serif font-bold text-lg text-kuningan-300 tracking-tighter">KP</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-xl sm:text-2xl text-kiswah-950 leading-none tracking-tight">
+            Kyai Parak
+          </span>
+          <span class="font-sans text-[11px] font-bold tracking-[0.2em] text-kuningan-700 uppercase mt-1">
+            Bambu Runcing
+          </span>
+        </div>
+      </a>
+
+      <!-- Tengah: Navigasi Desktop -->
+      <nav class="hidden xl:flex items-center gap-6 text-[13px] font-semibold text-kiswah-950">
+        <div class="dd" data-dd style="--dd-gap:26px"><button type="button" class="dd-btn hover:text-kuningan-600 transition py-1 border-b-2 border-transparent hover:border-kuningan-400" aria-expanded="false" aria-controls="dd-tentang" data-nav="tentang">Tentang Kami<svg class="dd-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><div id="dd-tentang" class="dd-panel" role="region" aria-label="Sub menu Tentang Pondok"><div class="w-[310px] rounded-xl border-2 border-kuningan-500/60 bg-turats-50 p-2 text-left font-sans shadow-ornate"><a href="tentang-pondok.html" class="flex items-center justify-between gap-4 rounded-lg bg-kiswah-900 px-4 py-3 text-turats-50 transition hover:bg-kiswah-800"><span><span class="block font-serif text-[16px] font-bold">Tentang Pondok</span><span class="mt-0.5 block text-[12.5px] font-medium text-turats-200">Profil, visi, dan nilai pondok</span></span><i class="fa-solid fa-arrow-right text-[11px] text-kuningan-300" aria-hidden="true"></i></a><ul class="mt-1 grid gap-0.5 "><li><a href="sejarah.html" class="block rounded-lg px-4 py-2.5 transition hover:bg-turats-100"><span class="block font-serif text-[15px] font-bold text-kiswah-950">Sejarah dan Muassis</span><span class="mt-0.5 block text-[12.5px] font-medium leading-snug text-kuningan-700">Dirintis tahun 1965</span></a></li><li><a href="pengasuh-pengurus.html" class="block rounded-lg px-4 py-2.5 transition hover:bg-turats-100"><span class="block font-serif text-[15px] font-bold text-kiswah-950">Pengasuh dan Pengurus</span><span class="mt-0.5 block text-[12.5px] font-medium leading-snug text-kuningan-700">Dewan masyayikh &amp; struktur pengurus</span></a></li></ul></div></div></div>
+        <div class="dd" data-dd style="--dd-gap:26px"><button type="button" class="dd-btn hover:text-kuningan-600 transition py-1 border-b-2 border-kuningan-500 hover:border-kuningan-400" aria-expanded="false" aria-controls="dd-pendidikan" data-nav="pendidikan">Pendidikan<svg class="dd-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><div id="dd-pendidikan" class="dd-panel" role="region" aria-label="Sub menu Semua Program"><div class="w-[min(92vw,540px)] rounded-xl border-2 border-kuningan-500/60 bg-turats-50 p-2 text-left font-sans shadow-ornate"><a href="program.html" class="flex items-center justify-between gap-4 rounded-lg bg-kiswah-900 px-4 py-3 text-turats-50 transition hover:bg-kiswah-800"><span><span class="block font-serif text-[16px] font-bold">Semua Program</span><span class="mt-0.5 block text-[12.5px] font-medium text-turats-200">Empat program pendidikan</span></span><i class="fa-solid fa-arrow-right text-[11px] text-kuningan-300" aria-hidden="true"></i></a><ul class="mt-1 grid gap-0.5 sm:grid-cols-2"><li><a href="madrasah-manbaul-falah.html" class="block rounded-lg px-4 py-2.5 transition hover:bg-turats-100"><span class="block font-serif text-[15px] font-bold text-kiswah-950">Madrasah Manba&#x27;ul Falah</span><span class="mt-0.5 block text-[12.5px] font-medium leading-snug text-kuningan-700">Kitab kuning berjenjang</span></a></li><li><a href="tahfidzul-quran.html" class="block rounded-lg px-4 py-2.5 transition hover:bg-turats-100"><span class="block font-serif text-[15px] font-bold text-kiswah-950">Tahfidzul Qur&#x27;an</span><span class="mt-0.5 block text-[12.5px] font-medium leading-snug text-kuningan-700">Hafalan dan murajaah</span></a></li><li><a href="pkpps.html" class="block rounded-lg px-4 py-2.5 transition hover:bg-turats-100"><span class="block font-serif text-[15px] font-bold text-kiswah-950">PKPPS</span><span class="mt-0.5 block text-[12.5px] font-medium leading-snug text-kuningan-700">Ijazah setara SMP &amp; SMA</span></a></li><li><a href="lgbr.html" class="block rounded-lg px-4 py-2.5 transition hover:bg-turats-100"><span class="block font-serif text-[15px] font-bold text-kiswah-950">LGBR</span><span class="mt-0.5 block text-[12.5px] font-medium leading-snug text-kuningan-700">Pencak silat &amp; tenaga dalam</span></a></li></ul></div></div></div>
+        <div class="dd" data-dd style="--dd-gap:26px"><button type="button" class="dd-btn hover:text-kuningan-600 transition py-1 border-b-2 border-transparent hover:border-kuningan-400" aria-expanded="false" aria-controls="dd-kehidupan" data-nav="kehidupan">Kehidupan Santri<svg class="dd-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><div id="dd-kehidupan" class="dd-panel" role="region" aria-label="Sub menu Kehidupan Santri"><div class="w-[310px] rounded-xl border-2 border-kuningan-500/60 bg-turats-50 p-2 text-left font-sans shadow-ornate"><a href="kehidupan-santri.html" class="flex items-center justify-between gap-4 rounded-lg bg-kiswah-900 px-4 py-3 text-turats-50 transition hover:bg-kiswah-800"><span><span class="block font-serif text-[16px] font-bold">Kehidupan Santri</span><span class="mt-0.5 block text-[12.5px] font-medium text-turats-200">Ritme harian di pondok</span></span><i class="fa-solid fa-arrow-right text-[11px] text-kuningan-300" aria-hidden="true"></i></a><ul class="mt-1 grid gap-0.5 "><li><a href="fasilitas.html" class="block rounded-lg px-4 py-2.5 transition hover:bg-turats-100"><span class="block font-serif text-[15px] font-bold text-kiswah-950">Fasilitas</span><span class="mt-0.5 block text-[12.5px] font-medium leading-snug text-kuningan-700">Asrama, masjid, dan sarana belajar</span></a></li><li><a href="panduan-wali.html" class="block rounded-lg px-4 py-2.5 transition hover:bg-turats-100"><span class="block font-serif text-[15px] font-bold text-kiswah-950">Panduan Wali Santri</span><span class="mt-0.5 block text-[12.5px] font-medium leading-snug text-kuningan-700">Sambang, perizinan, dan tata tertib</span></a></li></ul></div></div></div>
+        <a href="agenda.html" data-nav="agenda" class="hover:text-kuningan-600 transition py-1 border-b-2 border-transparent hover:border-kuningan-400">Agenda</a>
+        <div class="dd" data-dd style="--dd-gap:26px"><button type="button" class="dd-btn hover:text-kuningan-600 transition py-1 border-b-2 border-transparent hover:border-kuningan-400" aria-expanded="false" aria-controls="dd-kabar" data-nav="kabar">Kabar<svg class="dd-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><div id="dd-kabar" class="dd-panel" role="region" aria-label="Sub menu Kabar dan Karya"><div class="w-[310px] rounded-xl border-2 border-kuningan-500/60 bg-turats-50 p-2 text-left font-sans shadow-ornate"><a href="kabar-karya.html" class="flex items-center justify-between gap-4 rounded-lg bg-kiswah-900 px-4 py-3 text-turats-50 transition hover:bg-kiswah-800"><span><span class="block font-serif text-[16px] font-bold">Kabar dan Karya</span><span class="mt-0.5 block text-[12.5px] font-medium text-turats-200">Berita pondok &amp; tulisan santri</span></span><i class="fa-solid fa-arrow-right text-[11px] text-kuningan-300" aria-hidden="true"></i></a><ul class="mt-1 grid gap-0.5 "><li><a href="galeri.html" class="block rounded-lg px-4 py-2.5 transition hover:bg-turats-100"><span class="block font-serif text-[15px] font-bold text-kiswah-950">Galeri</span><span class="mt-0.5 block text-[12.5px] font-medium leading-snug text-kuningan-700">Dokumentasi foto kegiatan</span></a></li></ul></div></div></div>
+        <a href="pendaftaran.html" data-nav="pendaftaran" class="hover:text-kuningan-600 transition py-1 border-b-2 border-transparent hover:border-kuningan-400">Pendaftaran</a>
+      </nav>
+
+      <!-- Sisi kanan: tombol pendaftaran (tombol Hubungi diganti ikon WhatsApp melayang) -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="pendaftaran.html" class="inline-flex min-h-[44px] items-center gap-2 px-5 rounded-md bg-[#34735e] hover:bg-kiswah-800 text-white text-sm font-semibold transition">
+          <span>Informasi Pendaftaran</span>
+        </a>
+      </div>
+
+      <!-- Tombol Mobile Hamburger -->
+      <button id="mobile-menu-btn" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-drawer" class="xl:hidden w-11 h-11 rounded-md border border-kuningan-500/60 bg-turats-100 text-kiswah-950 flex items-center justify-center text-lg">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="hidden xl:hidden bg-turats-100 border-b-2 border-kuningan-500 px-6 py-6 shadow-lg">
+      <div class="flex flex-col space-y-3 text-sm font-semibold text-kiswah-950">
+        <div><button type="button" class="m-acc min-h-[44px] py-2 border-b border-kuningan-500/20 flex w-full justify-between items-center text-left " aria-expanded="false" aria-controls="m-tentang"><span>Tentang Kami &amp; Sejarah</span><span class="flex items-center gap-2"><svg class="m-chev text-kuningan-600" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span></button><div id="m-tentang" hidden><ul class="mt-1 mb-2 space-y-0.5 border-l-2 border-kuningan-500/60 pl-4 text-[13.5px]"><li><a href="tentang-pondok.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Tentang Pondok</a></li><li><a href="sejarah.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Sejarah dan Muassis</a></li><li><a href="pengasuh-pengurus.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Pengasuh dan Pengurus</a></li></ul></div></div>
+        <div><button type="button" class="m-acc min-h-[44px] py-2 border-b border-kuningan-500/20 flex w-full justify-between items-center text-left " aria-expanded="false" aria-controls="m-pendidikan"><span>Pendidikan</span><span class="flex items-center gap-2"><svg class="m-chev text-kuningan-600" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span></button><div id="m-pendidikan" hidden><ul class="mt-1 mb-2 space-y-0.5 border-l-2 border-kuningan-500/60 pl-4 text-[13.5px]"><li><a href="program.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Semua Program</a></li><li><a href="madrasah-manbaul-falah.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Madrasah Manba&#x27;ul Falah</a></li><li><a href="tahfidzul-quran.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Tahfidzul Qur&#x27;an</a></li><li><a href="pkpps.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">PKPPS</a></li><li><a href="lgbr.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">LGBR</a></li></ul></div></div>
+        <div><button type="button" class="m-acc min-h-[44px] py-2 border-b border-kuningan-500/20 flex w-full justify-between items-center text-left " aria-expanded="false" aria-controls="m-kehidupan"><span>Kehidupan Santri</span><span class="flex items-center gap-2"><svg class="m-chev text-kuningan-600" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span></button><div id="m-kehidupan" hidden><ul class="mt-1 mb-2 space-y-0.5 border-l-2 border-kuningan-500/60 pl-4 text-[13.5px]"><li><a href="kehidupan-santri.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Kehidupan Santri</a></li><li><a href="fasilitas.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Fasilitas</a></li><li><a href="panduan-wali.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Panduan Wali Santri</a></li></ul></div></div>
+        <a href="agenda.html" class="mobile-link min-h-[44px] py-2 border-b border-kuningan-500/20 flex justify-between items-center"><span>Agenda Pengajian</span></a>
+        <div><button type="button" class="m-acc min-h-[44px] py-2 border-b border-kuningan-500/20 flex w-full justify-between items-center text-left " aria-expanded="false" aria-controls="m-kabar"><span>Kabar &amp; Karya Santri</span><span class="flex items-center gap-2"><svg class="m-chev text-kuningan-600" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span></button><div id="m-kabar" hidden><ul class="mt-1 mb-2 space-y-0.5 border-l-2 border-kuningan-500/60 pl-4 text-[13.5px]"><li><a href="kabar-karya.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Kabar dan Karya</a></li><li><a href="galeri.html" class="block py-1.5 font-medium text-kiswah-800 hover:text-kuningan-700">Galeri</a></li></ul></div></div>
+        <a href="pendaftaran.html" class="mobile-link min-h-[44px] py-2 border-b border-kuningan-500/20 flex justify-between items-center"><span>Pendaftaran (Alur Sowan)</span></a>
+        <div class="pt-3 flex flex-col sm:flex-row gap-3">
+          <a href="pendaftaran.html" class="mobile-link flex-1 min-h-[44px] inline-flex items-center justify-center rounded-md bg-[#34735e] text-white font-semibold text-sm">
+            Informasi Pendaftaran
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<main id="konten">
+
+    <!-- ===================== HERO HALAMAN ===================== -->
+    <section class="relative overflow-hidden bg-arabesque-dark text-turats-50 border-b border-kuningan-500/50 px-4 sm:px-6 lg:px-8 pt-12 pb-16 sm:pt-16 sm:pb-24">
+      <div class="absolute inset-0" aria-hidden="true">
+        <!-- GANTI: assets/img/foto-utama.jpg dengan foto asli pondok (satu file dipakai di semua halaman) -->
+        <img src="assets/img/foto-utama.jpg" alt="" class="w-full h-full object-cover opacity-30" />
+        <div class="absolute inset-0 bg-[#07140f]/80"></div>
+      </div>
+      <div aria-hidden="true" class="hidden lg:block absolute right-[6%] top-10 -bottom-px w-[340px] border-t border-x border-kuningan-400/20 mihrab-arch"></div>
+      <div class="relative max-w-7xl mx-auto">
+        <nav aria-label="Breadcrumb" class="mb-10 text-sm text-turats-100/80">
+          <ol class="flex flex-wrap items-center gap-2">
+            <li><a href="index.html" class="underline-offset-4 hover:underline hover:text-kuningan-300">Beranda</a></li>
+            <li aria-hidden="true" class="text-kuningan-400/70">/</li>
+            <li><a href="program.html" class="underline-offset-4 hover:underline hover:text-kuningan-300">Program</a></li>
+            <li aria-hidden="true" class="text-kuningan-400/70">/</li>
+            <li aria-current="page" class="text-turats-50">Tahfidzul Qur'an</li>
+          </ol>
+        </nav>
+        <div class="max-w-3xl">
+          <p class="font-sans text-sm font-semibold text-kuningan-300 mb-4">Al-Qur'an</p>
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.12] text-turats-50">
+            Tahfidzul Qur'an, <span class="italic font-normal text-kuningan-300">pagi dan malam</span>
+          </h1>
+          <p lang="ar" dir="rtl" class="font-arabic text-2xl text-kuningan-300 mt-4 text-left">تحفيظ القرآن</p>
+          <p class="mt-6 text-lg sm:text-xl text-turats-100/90 leading-relaxed max-w-[60ch]">
+            Dua waktu khusus Al-Qur'an setiap hari, tetap ikut madrasah dan pengajian kitab.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROFIL & WAKTU (latar A) ===================== -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-arabesque-light">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-kiswah-950 font-semibold leading-tight">Waktu khusus Al-Qur'an</h2>
+        </div>
+        <div class="kitab-frame bg-turats-50 p-7 sm:p-12 shadow-ornate">
+          <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <figure>
+              <div class="p-3 bg-kiswah-900 mihrab-arch border-2 border-kuningan-500 max-w-sm mx-auto">
+                <div class="overflow-hidden mihrab-arch aspect-[4/5]">
+                  <!-- GANTI: foto asli santri tahfidz di pondok -->
+                  <img src="assets/img/foto-utama.jpg" alt="Foto ilustrasi sementara, belum foto pondok" class="w-full h-full object-cover" loading="lazy" />
+                </div>
+              </div>
+            </figure>
+            <div>
+              <p class="drop-cap font-sans text-jati-900/90 text-base sm:text-lg leading-relaxed">
+                Takhassus Al-Qur'an selepas jamaah Subuh dan selepas jamaah Maghrib. Selebihnya santri tahfidz mengikuti jadwal yang sama, termasuk tiga jam pelajaran madrasah setiap pagi.
+              </p>
+              <div class="mt-8">
+              <dl class="divide-y divide-kuningan-500/30 border-t border-kuningan-500/30">
+                <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] gap-1 sm:gap-6 py-4"><dt class="text-sm font-semibold text-kuningan-700 tabular-nums">05.00–06.00</dt><dd class="font-serif text-lg text-kiswah-950">Takhassus Al-Qur'an selepas Subuh</dd></div>
+                <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] gap-1 sm:gap-6 py-4"><dt class="text-sm font-semibold text-kuningan-700 tabular-nums">18.30–19.30</dt><dd class="font-serif text-lg text-kiswah-950">Takhassus Al-Qur'an selepas Maghrib</dd></div>
+                <div class="grid grid-cols-1 sm:grid-cols-[8rem_1fr] gap-1 sm:gap-6 py-4"><dt class="text-sm font-semibold text-kuningan-700 tabular-nums">Minggu Pon</dt><dd class="font-serif text-lg text-kiswah-950">Sima'an Al-Qur'an</dd></div>
+              </dl>
+              </div>
+              <!-- PERLU DIKONFIRMASI: target hafalan, metode setoran, dan syarat masuk program tahfidz belum ada di dokumen pondok. -->
+              <p class="mt-5 text-sm text-jati-800/90">Target hafalan dan cara setoran dijelaskan pembina saat mendaftar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KEGIATAN AL-QUR'AN LAIN (latar B) ===================== -->
+    <section aria-labelledby="kegiatan-judul" class="py-24 px-4 sm:px-6 lg:px-8 bg-turats-100 border-y border-kuningan-500/30">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <p class="font-sans text-sm font-semibold text-kuningan-700 mb-3">Sepanjang pekan</p>
+          <h2 id="kegiatan-judul" class="font-serif text-3xl sm:text-4xl lg:text-5xl text-kiswah-950 font-semibold leading-tight">Al-Qur'an di kegiatan rutin pondok</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <article class="kitab-frame bg-turats-50 p-7 shadow-ornate flex flex-col">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <p class="text-sm font-semibold text-kuningan-700">Selasa, 05.00</p>
+            <h3 class="mt-2 font-serif text-xl font-bold text-kiswah-950">Pembacaan surah Al-Waqi'ah</h3>
+          </article>
+          <article class="kitab-frame bg-turats-50 p-7 shadow-ornate flex flex-col">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <p class="text-sm font-semibold text-kuningan-700">Rabu, 16.00</p>
+            <h3 class="mt-2 font-serif text-xl font-bold text-kiswah-950">Qiro'ah</h3>
+          </article>
+          <article class="kitab-frame bg-turats-50 p-7 shadow-ornate flex flex-col">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <p class="text-sm font-semibold text-kuningan-700">Kamis, 18.00</p>
+            <h3 class="mt-2 font-serif text-xl font-bold text-kiswah-950">Yasin dan tahlil</h3>
+          </article>
+          <article class="kitab-frame bg-turats-50 p-7 shadow-ornate flex flex-col">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <p class="text-sm font-semibold text-kuningan-700">Setiap Minggu Pon</p>
+            <h3 class="mt-2 font-serif text-xl font-bold text-kiswah-950">Sima'an Al-Qur'an</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PEMBINA (latar A) ===================== -->
+    <section aria-labelledby="pembina-judul" class="py-24 px-4 sm:px-6 lg:px-8 bg-arabesque-light">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <p class="font-sans text-sm font-semibold text-kuningan-700 mb-3">Pembina</p>
+          <h2 id="pembina-judul" class="font-serif text-3xl sm:text-4xl lg:text-5xl text-kiswah-950 font-semibold leading-tight">Yang membimbing santri tahfidz</h2>
+        </div>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <li class="kitab-frame bg-turats-50 p-7 shadow-ornate flex flex-col">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <p class="text-sm font-semibold text-kuningan-700">Pembina santri tahfidz</p>
+            <h3 class="mt-2 font-serif text-xl font-bold text-kiswah-950">Nyai Hj. Lailatul Azizah</h3>
+          </li>
+          <li class="kitab-frame bg-turats-50 p-7 shadow-ornate flex flex-col">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <p class="text-sm font-semibold text-kuningan-700">PJ Qur'an putri</p>
+            <h3 class="mt-2 font-serif text-xl font-bold text-kiswah-950">Nyai Dzikriyyah</h3>
+          </li>
+          <li class="kitab-frame bg-turats-50 p-7 shadow-ornate flex flex-col">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <p class="text-sm font-semibold text-kuningan-700">PJ Pondok Putri dan PJ Qur'an</p>
+            <h3 class="mt-2 font-serif text-xl font-bold text-kiswah-950">Ning Zalva Rachmania</h3>
+          </li>
+          <li class="kitab-frame bg-turats-50 p-7 shadow-ornate flex flex-col">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <p class="text-sm font-semibold text-kuningan-700">PJ Pondok Putri dan PJ Qur'an</p>
+            <h3 class="mt-2 font-serif text-xl font-bold text-kiswah-950">Ning Seeda Sayda Navidza</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== PERTANYAAN (latar B) ===================== -->
+    <section aria-labelledby="tanya-judul" class="py-24 px-4 sm:px-6 lg:px-8 bg-turats-100 border-y border-kuningan-500/30">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <p class="font-sans text-sm font-semibold text-kuningan-700 mb-3">Pertanyaan wali</p>
+          <h2 id="tanya-judul" class="font-serif text-3xl sm:text-4xl lg:text-5xl text-kiswah-950 font-semibold leading-tight">Yang sering ditanyakan</h2>
+        </div>
+          <div class="kitab-frame bg-turats-50 p-7 sm:p-10 shadow-ornate flex flex-col">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <details class="border-b border-kuningan-500/30 py-2">
+              <summary class="flex min-h-[52px] items-center justify-between gap-4 font-serif text-lg text-kiswah-950 cursor-pointer list-none">Apakah santri tahfidz tetap ikut madrasah?<i class="fa-solid fa-plus text-sm text-kuningan-600" aria-hidden="true"></i></summary>
+              <p class="pb-4 text-base text-jati-800/90 leading-relaxed">Ya. Madrasah Manba'ul Falah dan pengajian kitab diikuti semua santri. Waktu Al-Qur'an selepas Subuh dan selepas Maghrib.</p>
+            </details>
+            <details class="border-b border-kuningan-500/30 py-2">
+              <summary class="flex min-h-[52px] items-center justify-between gap-4 font-serif text-lg text-kiswah-950 cursor-pointer list-none">Apakah ada biaya tambahan untuk program tahfidz?<i class="fa-solid fa-plus text-sm text-kuningan-600" aria-hidden="true"></i></summary>
+              <!-- PERLU DIKONFIRMASI: rincian biaya pondok tidak menyebut biaya khusus tahfidz. -->
+              <p class="pb-4 text-base text-jati-800/90 leading-relaxed">Rincian biaya pondok tidak mencantumkan biaya khusus tahfidz. Tanyakan kepastiannya saat sowan. <a href="pendaftaran.html" class="font-semibold text-kiswah-900 underline underline-offset-4">Lihat rincian biaya</a>.</p>
+            </details>
+            <details class="border-b border-kuningan-500/30 py-2">
+              <summary class="flex min-h-[52px] items-center justify-between gap-4 font-serif text-lg text-kiswah-950 cursor-pointer list-none">Siapa yang bisa saya hubungi untuk santri putri?<i class="fa-solid fa-plus text-sm text-kuningan-600" aria-hidden="true"></i></summary>
+              <p class="pb-4 text-base text-jati-800/90 leading-relaxed">Hubungi pondok putri di <a href="https://wa.me/6281573647273" target="_blank" rel="noopener noreferrer" class="font-semibold text-kiswah-900 underline underline-offset-4 tabular-nums">0815-7364-7273</a>. Untuk santri putra: <a href="https://wa.me/6288227379413" target="_blank" rel="noopener noreferrer" class="font-semibold text-kiswah-900 underline underline-offset-4 tabular-nums">0882-2737-9413</a>.</p>
+            </details>
+          </div>
+      </div>
+    </section>
+
+    <!-- ===================== BACA JUGA ===================== -->
+    <section aria-labelledby="terkait-judul" class="py-24 px-4 sm:px-6 lg:px-8 bg-arabesque-light">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <h2 id="terkait-judul" class="font-serif text-3xl sm:text-4xl lg:text-5xl text-kiswah-950 font-semibold leading-tight">Baca juga</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <a href="madrasah-manbaul-falah.html" class="kitab-frame bg-turats-50 p-7 sm:p-9 shadow-ornate flex flex-col transition-colors hover:bg-turats-100">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <h3 class="font-serif text-2xl font-bold text-kiswah-950">Madrasah Manba'ul Falah</h3>
+            <p class="mt-3 text-base text-jati-800/90 leading-relaxed">Kelas kitab kuning yang diikuti semua santri.</p>
+            <span class="mt-auto pt-6 inline-flex items-center gap-2 text-base font-semibold text-kiswah-900">Buka halaman<i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></span>
+          </a>
+          <a href="agenda.html" class="kitab-frame bg-turats-50 p-7 sm:p-9 shadow-ornate flex flex-col transition-colors hover:bg-turats-100">
+            <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+            <h3 class="font-serif text-2xl font-bold text-kiswah-950">Agenda pengajian</h3>
+            <p class="mt-3 text-base text-jati-800/90 leading-relaxed">Mujahadah, haul, dan kalender tahunan.</p>
+            <span class="mt-auto pt-6 inline-flex items-center gap-2 text-base font-semibold text-kiswah-900">Buka halaman<i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="ajakan-judul" class="py-24 px-4 sm:px-6 lg:px-8 bg-arabesque-dark text-turats-50 border-y border-kuningan-500/50">
+      <div class="max-w-6xl mx-auto">
+        <div class="kitab-frame bg-turats-50 text-kiswah-950 p-7 sm:p-10 shadow-ornate">
+          <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+          <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+            <div class="flex-1">
+              <p class="text-sm font-semibold text-kuningan-700">Pendaftaran</p>
+              <h2 id="ajakan-judul" class="mt-2 font-serif text-2xl sm:text-3xl font-bold text-kiswah-950">Ingin mondok di sini? Sowan dulu ke pengasuh.</h2>
+              <p class="mt-3 text-base text-jati-900/90 leading-relaxed">Tanyakan waktu sowan ke pondok putra atau putri. Pondok bisa dikunjungi kapan saja, asal mengabari dulu.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+              <a href="pendaftaran.html" class="inline-flex min-h-[48px] items-center justify-center px-6 rounded-md bg-kiswah-900 hover:bg-kiswah-800 text-turats-50 text-sm font-semibold border border-kuningan-500 transition">Informasi pendaftaran</a>
+              <a href="#hubungi" data-buka-wa class="inline-flex min-h-[48px] items-center justify-center gap-2 px-6 rounded-md bg-[#34735e] hover:bg-kiswah-800 text-white text-sm font-semibold transition"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Tanya lewat WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       FOOTER
+  ====================================================================== -->
+  <footer class="bg-[#071510] text-turats-200 border-t-2 border-kuningan-500 pt-16 pb-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-kuningan-500/25">
+        <!-- Identitas, alamat & legalitas -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <!-- GANTI: monogram KP dengan logo resmi SVG pondok -->
+            <div class="w-12 h-12 rounded-full bg-kiswah-900 border-2 border-kuningan-500 flex items-center justify-center">
+              <span class="font-serif font-bold text-lg text-kuningan-300">KP</span>
+            </div>
+            <div>
+              <p class="font-serif font-bold text-xl text-turats-50 leading-none">Pondok Pesantren Kyai Parak</p>
+              <span class="text-[11px] font-bold tracking-[0.2em] text-kuningan-400 uppercase">Bambu Runcing · Parakan</span>
+            </div>
+          </div>
+          <address class="not-italic text-sm text-turats-200/85 leading-relaxed max-w-md">
+            Jl. Coyudan No. 3, Besaran, Parakan Kauman, Kec. Parakan, Kabupaten Temanggung, Jawa Tengah 56254
+          </address>
+          <a href="https://maps.google.com/?q=Pondok+Pesantren+Kyai+Parak+Bambu+Runcing+Parakan+Temanggung" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-kuningan-300 hover:text-kuningan-300 underline underline-offset-4">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Lokasi di Google Maps
+          </a>
+          <p class="text-sm text-turats-200/85">
+            NSPP 510033230019 · Akta Yayasan Kemenkumham
+          </p>
+        </div>
+
+        <!-- Navigasi ringkas -->
+        <div class="lg:col-span-2 space-y-3">
+          <h2 class="font-serif font-bold text-base text-kuningan-300">Pondok</h2>
+          <ul class="space-y-1 text-sm text-turats-200/85">
+            <li><a href="tentang-pondok.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Tentang pondok</a></li>
+            <li><a href="sejarah.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Sejarah dan muassis</a></li>
+            <li><a href="pengasuh-pengurus.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Pengasuh dan pengurus</a></li>
+            <li><a href="kehidupan-santri.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Kehidupan santri</a></li>
+            <li><a href="fasilitas.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Fasilitas</a></li>
+            <li><a href="agenda.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Agenda pengajian</a></li>
+          </ul>
+        </div>
+        <div class="lg:col-span-2 space-y-3">
+          <h2 class="font-serif font-bold text-base text-kuningan-300">Pendidikan</h2>
+          <ul class="space-y-1 text-sm text-turats-200/85">
+            <li><a href="madrasah-manbaul-falah.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Madrasah Manba'ul Falah</a></li>
+            <li><a href="tahfidzul-quran.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Tahfidzul Qur'an</a></li>
+            <li><a href="pkpps.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">PKPPS</a></li>
+            <li><a href="lgbr.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">LGBR</a></li>
+            <li><a href="pendaftaran.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Pendaftaran</a></li>
+            <li><a href="panduan-wali.html" class="inline-block py-1.5 hover:text-kuningan-300 transition">Panduan wali santri</a></li>
+          </ul>
+        </div>
+
+        <!-- Media sosial -->
+        <div class="lg:col-span-4 space-y-4">
+          <h2 class="font-serif font-bold text-base text-kuningan-300">Media sosial</h2>
+          <p class="text-sm text-turats-200/85 leading-relaxed">
+            Dokumentasi pengajian, kabar pondok, dan karya santri.
+          </p>
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="https://www.instagram.com/ppbamburuncing/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @ppbamburuncing" class="w-11 h-11 rounded-full bg-kiswah-900 border border-kuningan-500/50 hover:border-kuningan-300 flex items-center justify-center text-kuningan-300 transition">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <!-- PERLU DIKONFIRMASI: alamat akun Instagram santri -->
+            <a href="https://www.instagram.com/santri.kpbr/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @santri.kpbr" class="w-11 h-11 rounded-full bg-kiswah-900 border border-kuningan-500/50 hover:border-kuningan-300 flex items-center justify-center text-kuningan-300 transition">
+              <i class="fa-solid fa-user-group text-sm" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/PonpesKyaiParakBambuRuncing/" target="_blank" rel="noopener noreferrer" aria-label="Facebook Ponpes Kyai Parak Bambu Runcing" class="w-11 h-11 rounded-full bg-kiswah-900 border border-kuningan-500/50 hover:border-kuningan-300 flex items-center justify-center text-kuningan-300 transition">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <!-- GANTI: tautan YouTube & TikTok resmi belum ada -->
+            <a href="#" aria-label="YouTube Kyai Parak TV" class="w-11 h-11 rounded-full bg-kiswah-900 border border-kuningan-500/50 hover:border-kuningan-300 flex items-center justify-center text-kuningan-300 transition">
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="#" aria-label="TikTok Kyai Parak TV" class="w-11 h-11 rounded-full bg-kiswah-900 border border-kuningan-500/50 hover:border-kuningan-300 flex items-center justify-center text-kuningan-300 transition">
+              <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+            </a>
+          </div>
+          <p class="text-sm text-turats-200/85">
+            Email: <a href="mailto:psbkyaiprak@gmail.com" class="underline underline-offset-2 hover:text-kuningan-300">psbkyaiprak@gmail.com</a>
+          </p>
+          <p lang="ar" dir="rtl" class="font-arabic text-lg text-kuningan-300/90 pt-2 text-left">
+            نفعنا الله بعلومهم وبارك فيهم في الدارين آمين
+          </p>
+        </div>
+      </div>
+
+      <!-- Hak cipta -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-turats-200/80">
+        <p>© 2026 Pondok Pesantren Kyai Parak Bambu Runcing, Parakan, Temanggung.</p>
+        <div class="flex items-center gap-6">
+          <a href="kebijakan-privasi.html" class="py-2 text-turats-200/80 hover:text-kuningan-300">Kebijakan privasi</a>
+          <a href="#atas" class="py-2 text-turats-200/80 hover:text-kuningan-300">Kembali ke atas</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       TOMBOL WHATSAPP MELAYANG: pilih pondok putra atau putri
+  ====================================================================== -->
+  <div id="hubungi" class="wa fixed bottom-5 right-5 z-50 sm:bottom-6 sm:right-6" data-wa>
+    <div id="wa-pilihan" class="wa-panel absolute bottom-[76px] right-0 w-[min(19rem,calc(100vw-2.5rem))]">
+      <div class="kitab-frame bg-turats-50 p-5 shadow-ornate">
+        <div class="corner-ornament corner-tl"></div><div class="corner-ornament corner-tr"></div><div class="corner-ornament corner-bl"></div><div class="corner-ornament corner-br"></div>
+        <p class="font-serif text-lg font-bold text-kiswah-950">Tanya lewat WhatsApp</p>
+        <p class="mt-1 mb-4 text-sm text-jati-800/90">Pilih sekretariat yang ingin dihubungi.</p>
+        <a href="https://wa.me/6288227379413?text=Assalamu'alaikum.%20Saya%20ingin%20bertanya%20tentang%20Pondok%20Pesantren%20Kyai%20Parak%20Bambu%20Runcing%20(putra)." target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 rounded-md border border-kuningan-500/40 bg-turats-100 hover:bg-turats-200 px-3 py-3 transition">
+          <span class="w-10 h-10 shrink-0 rounded-full bg-kiswah-900 border border-kuningan-500 text-kuningan-300 flex items-center justify-center text-lg" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+          <span><span class="block font-serif font-bold text-kiswah-950">Pondok Putra</span><span class="block text-sm text-kuningan-700 tabular-nums">0882-2737-9413</span></span>
+        </a>
+        <a href="https://wa.me/6281573647273?text=Assalamu'alaikum.%20Saya%20ingin%20bertanya%20tentang%20Pondok%20Pesantren%20Kyai%20Parak%20Bambu%20Runcing%20(putri)." target="_blank" rel="noopener noreferrer" class="mt-2 flex items-center gap-3 rounded-md border border-kuningan-500/40 bg-turats-100 hover:bg-turats-200 px-3 py-3 transition">
+          <span class="w-10 h-10 shrink-0 rounded-full bg-kuningan-700 border border-kiswah-900 text-white flex items-center justify-center text-lg" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+          <span><span class="block font-serif font-bold text-kiswah-950">Pondok Putri</span><span class="block text-sm text-kuningan-700 tabular-nums">0815-7364-7273</span></span>
+        </a>
+      </div>
+    </div>
+    <button type="button" class="wa-btn w-14 h-14 rounded-full bg-[#34735e] hover:bg-kiswah-800 border-2 border-kuningan-400 text-white shadow-ornate-dark flex items-center justify-center text-[26px] transition" aria-expanded="false" aria-controls="wa-pilihan" aria-label="Tanya lewat WhatsApp">
+      <i class="wa-ikon fa-brands fa-whatsapp" aria-hidden="true"></i>
+      <i class="wa-tutup fa-solid fa-xmark text-xl" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

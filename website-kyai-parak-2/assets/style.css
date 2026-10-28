@@ -1,0 +1,133 @@
+    /* Polesan Pola Geometris Islam & Kertas Kitab Turats */
+    body {
+      background-color: #f4ebd9;
+      color: #1c140d;
+      overflow-x: hidden;
+    }
+
+    /* Pola Arabesque / Bintang Delapan Sudut Halus */
+    .bg-arabesque-light {
+      background-color: #f4ebd9;
+      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23c59638' stroke-width='0.6' stroke-opacity='0.18'%3E%3Cpath d='M40 0L48 32L80 40L48 48L40 80L32 48L0 40L32 32Z'/%3E%3Ccircle cx='40' cy='40' r='18'/%3E%3Crect x='14' y='14' width='52' height='52' transform='rotate(45 40 40)'/%3E%3Crect x='14' y='14' width='52' height='52'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .bg-arabesque-dark {
+      background-color: #08261c;
+      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d6b154' stroke-width='0.6' stroke-opacity='0.12'%3E%3Cpath d='M40 0L48 32L80 40L48 48L40 80L32 48L0 40L32 32Z'/%3E%3Ccircle cx='40' cy='40' r='18'/%3E%3Crect x='14' y='14' width='52' height='52' transform='rotate(45 40 40)'/%3E%3Crect x='14' y='14' width='52' height='52'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    /* Bingkai Halaman Kitab Kuning (Double Border + Inner Offset) */
+    .kitab-frame {
+      position: relative;
+      border: 1.5px solid #c59638;
+      box-shadow: inset 0 0 0 5px #f4ebd9, inset 0 0 0 6px rgba(197, 150, 56, 0.55);
+    }
+
+    .kitab-frame-dark {
+      position: relative;
+      border: 1.5px solid rgba(214, 177, 84, 0.6);
+      box-shadow: inset 0 0 0 5px #08261c, inset 0 0 0 6px rgba(214, 177, 84, 0.35);
+    }
+
+    /* Ornamen Sudut Bingkai */
+    .corner-ornament {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-color: #c59638;
+      pointer-events: none;
+      z-index: 10;
+    }
+    .corner-tl { top: 4px; left: 4px; border-top: 2.5px solid; border-left: 2.5px solid; }
+    .corner-tr { top: 4px; right: 4px; border-top: 2.5px solid; border-right: 2.5px solid; }
+    .corner-bl { bottom: 4px; left: 4px; border-bottom: 2.5px solid; border-left: 2.5px solid; }
+    .corner-br { bottom: 4px; right: 4px; border-bottom: 2.5px solid; border-right: 2.5px solid; }
+
+    /* Bentuk Lengkung Kubah / Mihrab */
+    .mihrab-arch {
+      border-top-left-radius: 9999px;
+      border-top-right-radius: 9999px;
+    }
+
+    .mihrab-card {
+      border-top-left-radius: 140px;
+      border-top-right-radius: 140px;
+    }
+
+    /* Drop Cap Klasik */
+    .drop-cap::first-letter {
+      float: left;
+      font-family: 'Lora', serif;
+      font-size: 4.2rem;
+      line-height: 0.85;
+      padding-top: 4px;
+      padding-right: 14px;
+      padding-bottom: 4px;
+      color: #08261c;
+      font-weight: 700;
+    }
+
+    /* Tipografi dasar */
+    body { font-size: 16px; line-height: 1.65; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    [lang="ar"] { font-family: 'Amiri', serif; line-height: 1.9; }
+
+    /* Fokus keyboard yang jelas di latar terang maupun gelap */
+    a:focus-visible, button:focus-visible, [tabindex]:focus-visible, iframe:focus-visible {
+      outline: 2px solid #08261c;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 4px #e8cb7a;
+      border-radius: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+    }
+
+    /* Scrollbar Kustom */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #051811;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c59638;
+      border: 2px solid #051811;
+      border-radius: 4px;
+    }
+
+    /* ===== Sub menu (dropdown desktop + akordeon mobile) ===== */
+    .dd { position: relative; }
+    .dd-btn { white-space: nowrap; display: inline-flex; align-items: center; gap: .35rem; background: none; padding-inline: 0; font: inherit; color: inherit; cursor: pointer; letter-spacing: inherit; }
+    .dd-chev { opacity: .65; transition: transform .25s ease; flex: none; }
+    .dd-panel { position: absolute; top: 100%; left: 50%; padding-top: var(--dd-gap, 18px); z-index: 90;
+      opacity: 0; visibility: hidden; transform: translate(calc(-50% + var(--dd-shift, 0px)), 8px); transition: opacity .18s ease, transform .25s cubic-bezier(.2,.7,.2,1), visibility .25s; }
+    .dd-panel.dd-right { left: auto; right: -16px; transform: translate(var(--dd-shift, 0px), 8px); }
+    .dd.open > .dd-panel { opacity: 1; visibility: visible; transform: translate(calc(-50% + var(--dd-shift, 0px)), 0); }
+    .dd.open > .dd-panel.dd-right { transform: translate(var(--dd-shift, 0px), 0); }
+    .dd.open .dd-chev { transform: rotate(180deg); }
+    @media (hover: hover) {
+      .dd:hover > .dd-panel { opacity: 1; visibility: visible; transform: translate(calc(-50% + var(--dd-shift, 0px)), 0); }
+      .dd:hover > .dd-panel.dd-right { transform: translate(var(--dd-shift, 0px), 0); }
+      .dd:hover .dd-chev { transform: rotate(180deg); }
+    }
+    .m-acc .m-chev { transition: transform .25s ease; }
+    .m-acc[aria-expanded="true"] .m-chev { transform: rotate(180deg); }
+    #pageToast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 9999; transform: translate(-50%, 16px); opacity: 0; pointer-events: none;
+      background: #1c2421; color: #faf8f4; font: 500 14px/1.4 system-ui, sans-serif; padding: 12px 18px; border-radius: 999px; box-shadow: 0 12px 30px -10px rgba(0,0,0,.45); transition: opacity .25s ease, transform .25s ease; max-width: calc(100vw - 32px); text-align: center; }
+    #pageToast.show { opacity: 1; transform: translate(-50%, 0); }
+    #pageToast code { color: #d6b565; font-family: ui-monospace, monospace; }
+    @media (prefers-reduced-motion: reduce) { .dd-panel, .dd-chev, .m-chev, #pageToast { transition: none !important; } }
+
+    /* Atribut hidden harus menang atas kelas display Tailwind (grid/flex) */
+    [hidden] { display: none !important; }
+
+    /* Tombol WhatsApp melayang */
+    .wa-panel { opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity .15s ease, transform .2s ease, visibility .2s; }
+    .wa.open .wa-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    .wa .wa-tutup { display: none; }
+    .wa.open .wa-tutup { display: inline; }
+    .wa.open .wa-ikon { display: none; }
